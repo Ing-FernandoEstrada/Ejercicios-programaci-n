@@ -10,3 +10,5 @@ ciudades = [
     'Medellin',
     'Bogota'
 ]
+
+print(ciudades[1])

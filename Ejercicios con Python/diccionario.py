@@ -14,4 +14,4 @@ animales = {
     'mamifero': 'Elefante'
 }
 
-
+print(animales['ave'])

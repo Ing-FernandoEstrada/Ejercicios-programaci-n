@@ -1,0 +1,5 @@
+ciudad1 = 'Pasto'
+ciudad2 = 'Cartagena'
+ciudad3 = 'Medellin'
+ciudad4 = 'Bogota'
+ciudad5 = 'Barranquilla'

@@ -22,4 +22,3 @@ invitado1.mostrar_invitado()
 invitado2.mostrar_invitado()
 invitado2.agregar_tiquete()
 invitado2.agregar_tiquete()
-

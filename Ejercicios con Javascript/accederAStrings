@@ -1,0 +1,13 @@
+<script>
+    //Acceder a le elementos de un String
+
+let nombre = "Fernando";
+            //01234567
+// Se utiliza para remplazar alguna letra de una posición nombre[0] = "U";
+console.log(nombre[3]);
+console.log(nombre[-1]);
+//De esta manera hace que se haga el recorrido de atras para delante
+console.log(nombre[nombre.length - 2]);
+console.log(nombre[nombre.length - 0]);
+console.log(nombre[nombre.length - 1]);
+</script>

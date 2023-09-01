@@ -1,0 +1,63 @@
+<script>
+    //Metodos para manejar Strings
+let texto = "Estamos programando en JavaScript JavaScript";
+//Nos devuelve la longitud de la cadena de caracteres
+texto[5];
+console.log(texto.length);
+//Permite cortar el String teniendo en cuenta las posiciones
+console.log(texto.slice(10, 20));
+console.log(texto.slice(9, 30));
+console.log(texto.slice(0, 5));
+//Con posiciones negativas
+console.log(texto.slice(-6, -1));
+
+//Este metodo no permite introducir metodos negativos
+
+console.log(texto.substring(0, 10));
+//-6 lo tomaria como que esta ubicando en la posicion 0
+console.log(texto.substring(-6, 10));
+console.log(texto.substring(10, -10));
+
+//Permite identificar el indice desde que se quiere comenzae a extraer el texto
+
+console.log(texto.substr(10, -10));
+console.log(texto.substr(10, 5));
+
+//Especificar le metodo que se quiere modificar
+
+//En este caso se cambiaria la primera coincidencia
+console.log(texto.replace("JavaScript", "Python"));
+
+//Realiza eso cuando se pide que cambie la palabra todas las veces que sea necesario
+console.log(texto.replace(/JavaScript/g, "Python"));
+
+//COn este metodo permite remplazar todad las palabras sin necesidad de utilizar los //g
+
+console.log(texto.replaceAll("JavaScript", "Python"));
+
+//Estos dos metodos permiten convertir la cadena a Mayusculas y Minusculas
+
+//Mayusculas
+console.log(texto.toUpperCase());
+//Minusculas
+console.log(texto.toLowerCase());
+
+//Utilizando concatenacion de Strings
+
+let texto2 = "Hola";
+console.log(texto2 + " " + texto);
+console.log(texto2.concat(" ", texto));
+console.log("Hola!".concat(" ", texto));
+
+//Permite eliminar espacios en blanco que aparecen en los strings
+
+let texto3 = "       Hola";
+console.log(texto3);
+
+//Se utiliza cuando se quiere eliminar en ambos lados
+console.log(texto3.trim());
+//Se utiliza para elimianr los del comienzo
+console.log(texto3.trimStart());
+//Se utiliza para eliminar los espacios al final
+console.log(texto3.trimEnd());
+</script>

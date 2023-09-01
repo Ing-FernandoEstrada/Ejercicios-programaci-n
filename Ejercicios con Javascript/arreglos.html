@@ -1,0 +1,63 @@
+<script>
+    //Declarar arreglos
+
+let nombres = ["Pablo", "Ana", "Javier"];
+let notas = [8.2, 7.6, 4.8];
+//let arreglo = ["Hola", 5, true, [4 , 5]];
+
+//Utilizando indexacion
+console.log(notas);
+console.log(notas[0]);
+console.log(notas[2]);
+console.log(notas[3]);
+
+//Se puede cambiar el valor de alguno de ellos
+
+notas[2] = 5.3;
+console.log(notas[2]);
+
+//Se puede asignar nuevos elementos dentro de un arreglo
+
+nombres[3] = "Pedro";
+notas[3] = 6.2
+console.log(nombres);
+console.log(notas);
+//Nos aperece el arreglo actualizado
+
+//Se puede asignar arreglos vacios
+
+let nombres2 = [];
+nombres2[0] = "Pablo";
+nombres2[1] = "Ana";
+nombres2[2] = "Javier";
+console.log(nombres2);
+
+//se pueden convinar y se peuden introducir arreglos dentro de un arreglo
+
+let alumnos = [["Pablo", "Ana", "Javier"], [7.2, 3.6, 3.4]];
+//                         0                      1
+
+//Si se quiere acceder a elemtnos indivuales
+console.log(alumnos);
+console.log(alumnos[0]);
+console.log(alumnos[0][1]);
+console.log(alumnos[1]);
+console.log(alumnos[1][1]);
+
+//arreglos de tipo constante
+
+const nombres3 = ["Pablo", "Ana", "Javier"];
+console.log(nombres3[0]);
+
+//No se puede reasignarle algo nuevo a todo el arreglo pero se pueden renonbrar elementos individuales
+
+nombres3[0] = "Pedro";
+nombres3[1] = "Anita";
+nombres3[2] = "Hernesto";
+
+//Se puede añadir otra posición
+
+nombres3[3] = "Paula";
+console.log(nombres3);
+
+</script>

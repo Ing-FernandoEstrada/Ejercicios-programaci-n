@@ -1,0 +1,38 @@
+<script>
+    //Metodos para realizar busquedas en String
+
+let texto = "Estamos programando en JavaScript"
+//Este metodo nos devuelve la psocion en la qie se encuentra el texto
+console.log(texto.indexOf("JavaScript"));
+console.log(texto.indexOf("am"));
+console.log(texto.indexOf("am", 6));
+
+//Nos devuleve por defecto la ultima posción
+
+console.log(texto.lastIndexOf("am", 6));
+
+//Este metodo realiza la busqueda pero no permite un segundo elemento de entrada
+
+console.log(texto.search("am"));
+
+//ESte metodo devuelve true si esta dentro del string y false si no esta dentro del string
+
+//Este metodo tiene en cuenta mayusculas y minusculas
+console.log(texto.includes("JavaScript"));
+console.log(texto.includes("Python"));
+
+//Este metodo no distingue mayusculas ni minusculas pero devuelve si es verdadero o falso
+
+console.log(texto.toUpperCase().includes("JAVASCRIPT"));
+
+//Estos metodos devuelven true si el string comienza con la palabra especificada y false si no se la especifica
+
+console.log(texto.startsWith("JavaScript"));
+console.log(texto.startsWith("Estamos"));
+console.log(texto.startsWith("Estamos", 8));
+console.log(texto.startsWith("programando", 8));
+
+//SI finaliza con esa palabra
+console.log(texto.endsWith("JavaScript"));
+console.log(texto.endsWith("t"));
+</script>

@@ -1,0 +1,39 @@
+<script>
+    //Sets permiten almacenar diferentes elementos pero no permiten almacenar el mismo valor en repetidas ocasiones
+
+let nombres = ["Juan", "Pablo", "Laura", "Juan"]
+console.log(nombres);
+
+//De esta manera se define el set
+//Como se repiten los elementos no aparece
+const nombresSet = new Set(["Juan", "Pablo", "Laura", "Juan"]);
+console.log(nombresSet);
+
+//Con el elemento set no permite buscarlo con alguna psoción en especifico
+
+console.log(nombresSet[0]);
+
+//COn este metodo en set permite añadir un nuevo elemento
+
+nombresSet.add("Maria");
+console.log(nombresSet);
+
+//Para eliminar un elemento del set se utiliza el metodo delete
+
+nombresSet.delete("Pablo");
+console.log(nombresSet);
+
+//este metodo devuleve true si encuentra el elemento y false si no
+
+nombresSet.has("Pablo");
+console.log(nombresSet);
+nombresSet.has("Maria");
+console.log(nombresSet);
+
+//Propiedad
+
+//Esta propiedad deveulve la cantidad de elementos que tiene el set
+
+nombresSet.size;
+console.log(nombresSet);
+</script>

@@ -1,0 +1,50 @@
+<script>
+    //Metodos para trabajar con arreglos
+
+let nombres = ["Pablo", "Ana", "Javier"];
+
+//Este metodo elimina el ultimo valor y devuelve el arreglo actualizado
+nombres.pop();
+console.log(nombres);
+
+//Utilizando una variable anticipada nos devuelve la ultima posción que se ha eliminado segun la secuencia
+
+let ultimoNombre = nombres.pop();
+console.log(nombres);
+console.log(ultimoNombre);
+
+//Va a devolver el primer valor y lo va a eliminar
+
+let nombres2 = ["Pablo", "Ana", "Javier"];
+let ultimoNombre2 = nombres2.shift();
+console.log(nombres2);
+console.log(ultimoNombre2);
+
+//Requiere un argumento de entrada y es el valor que se quiere asignar al nuievo elemento
+
+nombres2.push("Laura");
+console.log(nombres2);
+
+//Este metodo agrega otro argumento solo que en la primera poscicion
+
+nombres2.unshift("Mateo");
+console.log(nombres2);
+
+let nombres3 = ["Julian", "Edgar", "Santiago"];
+//este metoodo mo pide ningun argumento de entrada en el que permite organizar el arreglo alfabeticamento
+
+nombres3.sort();
+console.log(nomnbres3)
+
+//Este metodo tambien permite organizar el arreglo donde se voltean los elementos
+
+nombres3.reverse();
+console.log(nombres3);
+
+//SI se quiere ordenar alfabeticamente inverso se realiza asi
+
+nombres3.sort().reverse();
+console.log(nombres3);
+
+
+</script>

@@ -1,0 +1,39 @@
+<script>
+    //Maps
+
+//En este caso se define un map con 3 valores
+//Para acceder a ellos las claves son unicas ej no se debera repetir Juan
+//Si se repite aparece el que se ingreso en ultima posición
+const alumnos = new Map([["Juan", 7.2],
+                        ["Pablo", 9.1],
+                        ["Laura", 8.5]]);
+
+//Imprime todo el Map
+console.log(alumnos);
+
+//----Metodos-----
+
+//Permite añadir una pareja de clave valor
+
+alumnos.set("Javier", 6.3);
+
+//El metodo permite acceder a un valor individual
+
+console.log(alumnos.get("Juan"));
+console.log(alumnos.get("Pablo"));
+console.log(alumnos.get("Laura"));
+
+//Permite eliminar una apreja de clave valor solo con su clave
+
+alumnos.delete("Juan");
+console.log(alumnos);
+
+//Devuelve true si encuentra la clave y false si no la contiene
+
+alumnos.has("Pablo");
+alumnos.has("Mateo");
+
+//Devuelve cuanatas parekas almacenadas tiene la clave valor
+
+console.log(alumnos.size);
+</script>

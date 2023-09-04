@@ -1,0 +1,85 @@
+<script>
+    //Operaciones relacionales y logicas
+
+let variable = true;
+
+//Ejemplo de que si coincide el numero al tipo de dato ingresado
+
+Number.isInteger(5.1);
+Number.isInteger(5);
+
+//Operadores relacionales is cumple una coindicion o no
+
+//----------Operador relacional ===------------
+
+//Esta operacion devuelve si es igual lo que se introduce a ambos lados
+
+5 === 5
+5 === 6
+
+5 == 5
+5 == 6
+
+//En este caso daria falso porque estaria comparando los tipos de dato
+5 === "5"
+//Pero en este caso no tiene en cuenta los tipos de dato y duelve el true
+5 == "5"
+
+//---------Operador relacional !==-----------
+
+//Diferente de: devuelve true si son diferentes y false si son iguales 
+
+5 !== 0
+5 !== 5
+
+//En este caso tiene no tiene en cuenta el tipo de dato pero coinciden los numeros
+5 != "5"
+5 != "6"
+
+//En este caso tiene tiene en cuenta el tipo de dato pero coinciden los numeros
+5 !== "5"
+
+//-----------Simbolo >---------------
+
+5 > 0 // 5 es mayor que 0
+5 > 10 // 5 es mayor que 10
+5 >= 10 // 5 es mayor igual que 10
+5 >= 5 // 5 es mayor igual que 5
+
+//-----------Simbolo <---------------
+
+5 < 0 // 5 es mayor que 0
+5 < 10 // 5 es mayor que 10
+5 <= 10 // 5 es mayor igual que 10
+5 <= 5 // 5 es mayor igual que 5
+
+2 < 12
+
+//Toca tener en cuenta los tipos de dato antes de ingresar el dato numerico
+"2" < "12"
+
+//-----------Operaciones logicas-------------
+
+//Operacion AND &&
+
+//Devuelve true si la condicion sea true de izquierda y derecha
+
+0 < 2 && 5 > 6 //false
+0 < 2 && 7 > 6 //True
+3 < 2 && 5 > 6 //False
+
+//Operacion OR ||
+
+//Devuelve true:  una o las dos coindiciones se cumplan
+//False: Ninguna se cumple
+
+0 < 2 || 5 > 6 //True
+0 < 2 || 7 > 6 //True
+3 < 2 || 5 > 6 //False
+
+//Operacion NOT !
+
+!(5 < 10) // 5 < 10 true negada false
+
+!(15 < 10) // 15 < 10 false negegada true
+</script>

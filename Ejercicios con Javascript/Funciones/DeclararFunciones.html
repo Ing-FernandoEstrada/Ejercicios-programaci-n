@@ -1,0 +1,34 @@
+<script>
+//Declarar funciones
+
+//No aparece nada porque se declara la funcion pero aun se utiliza
+function Saludar(){
+  console.log("Hola");
+}
+//Para eso unicamente se llamada a la funcion
+Saludar();
+
+//Para declarar una funcion con argumentos de entrada se realiza de esta manera
+
+function Saludar(nombre, edad){
+  console.log("Hola " + nombre + " tienes " + edad + " años");
+}
+
+Saludar("Juan", 25);
+Saludar("Pablo", 63);
+Saludar("Maria", 54 );
+
+//Para que un valor sea por defecto se realiza asi para que no muestre undefine
+
+function Saludar(nombre, edad = 25){
+  console.log("Hola " + nombre + " tienes " + edad + " años");
+}
+
+Saludar("Juan");
+Saludar("Pablo");
+Saludar("Maria");
+
+//En este caso se debe respetar el orden de los argumentos de entrada
+
+Saludar(undefined,29);
+</script>

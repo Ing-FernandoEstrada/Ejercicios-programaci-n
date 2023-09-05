@@ -1,0 +1,43 @@
+<script>
+    //Bucle while
+
+//Trabaja de manera similar al for con la unica diferencia en la que se debe introducir la condiocion que se tiene que cumplir
+
+//Se divide el numero entre 2 hasta que sea mayor que 1
+//100/2 = 50, 50/2=25, 25/2=12.5 etc etc hasta que sea mayor que 1
+//Nunca podria divirse si el numero de la condicion es -1
+//Sucede errores cuando la coincion no es menor o mayor que el bucle ejemplo que el numero ingresado sea menor y que la condicion sea mayor
+
+//-----------Sentencia while-----------
+
+let num = 100;
+while (num>1){
+  num /= 2; // num = num/2
+  console.log(num);
+}
+
+//-----------Sentencia do while-----------
+
+//se cumpliria en este caso porque 0.8 se divide entre 2 pero cierra cuando encuentra que es mayor que 1
+
+let num2 = 0.8;
+do {
+  num2 /= 2; // num = num/2
+  console.log(num2);
+} while( num2 > 1);
+
+//Esto se realiza con for
+//Cuando las iteraciones son sencillas es recomendable utilizar el bucle for
+for (let i = 1; i<=5; i++)
+  {
+    console.log(i);
+  }
+
+//Ahora con while
+//Si las operaciones son complejas seria mas recomendable utilizar bucle while
+let j = 1;
+while(j<=5){
+  console.log(j);
+  j++
+}
+</script>

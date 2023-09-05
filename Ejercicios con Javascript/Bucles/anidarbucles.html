@@ -1,0 +1,30 @@
+<script>
+    //Anidar bucles
+
+//Este es un arreglo de una dimension
+let numeros = [5, 1, 3, 6, 8, 4];
+//Para anidar los elementos utilizaremos el bucle for
+//En este caso nos aparece el orden del arreglo
+
+for (let i = 0; i < numeros.length; i++)
+  {
+    console.log(numeros[i]);
+  }
+
+//Este es un arreglo de mas dimensiones
+//Esto pasa unicamente en arreglos de 4 elementos
+let numeros2 = [[5, 1, 3, 6], [8, 4, 7, 5, 5, 4], [7, 8, 8, 6, 9]];
+//                    0            1              2
+for (let i = 0; i < numeros2.length; i++)
+{
+    //Para que no pase eso debemos de clarar esta  nueva variable para que muestre todos los numeros del arreglo
+    let nuevoArreglo = numeros2[i];
+    for (let j = 0; j < nuevoArreglo.length; j++)     
+    {
+     console.log(nuevoArreglo[j]); 
+    }
+    
+  }
+
+
+</script>

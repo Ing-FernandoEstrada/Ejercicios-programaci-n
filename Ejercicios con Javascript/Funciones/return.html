@@ -1,3 +1,40 @@
 <script>
-    
+//Sentencia return 
+
+//Este aplicativo calcula la media de 2 números
+function Media (num1, num2) {
+  //La media se calcula de esta manera
+  let media = (num1 + num2) / 2;
+  //Para devolver un valor se utiliza la sentencia return
+  return media;
+}
+
+let valor  = Media(4, 2);
+console.log(valor);
+
+//Tambien se puede escribir de esta manera
+
+function Media2 (num1, num2) {
+  //La media se calcula de esta manera
+  return (num1 + num2) / 2;
+}
+
+Media(4, 3)
+
+//este ejemplo tiene muchos ejemplos de entrada
+
+function Media3(){
+  let suma = 0;
+  for (let i=0; i < arguments.length; i++)
+  {
+    suma += arguments[i];
+  }
+  return suma / arguments.length;
+  
+}
+
+let valor2 = Media3(4, 2, 6, 9, 7);
+console.log(valor2);
+//Por tanto se utuliza la funcion con argumentos de estrada y otra no
+//Cuando una sentencia se pone despues del return no ejecuta
 </script>

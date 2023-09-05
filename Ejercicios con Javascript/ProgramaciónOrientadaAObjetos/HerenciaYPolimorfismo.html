@@ -1,0 +1,41 @@
+<script>
+    //Herencia y polimorfismo
+
+class Animal{
+  Comer(){
+    console.log("El animal come");
+  }
+  Dormir(){
+    console.log("El animal duerme");
+  }
+}
+
+let animal1 = new Animal();
+
+animal1.Comer();
+animal1.Dormir();
+
+//Si queremos decir el perro ladra como un mensaje adicional seria de esta manera
+
+//Para que funcionen las propiedades de la clase animal en la clase perro tenemos que colocar 
+class Perro extends Animal{
+  Ladrar (){
+    console.log("El perro ladra");
+  }
+  //A esto se le llama polimorfismo en java
+  Comer(){
+    console.log("El animal come pienso");
+  }
+}
+
+let perro1 = new Perro();
+
+animal1.Comer()
+perro1.Comer();
+
+
+
+
+
+
+</script>

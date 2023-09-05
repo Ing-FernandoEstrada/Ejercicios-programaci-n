@@ -1,0 +1,83 @@
+<script>
+    //Objetos
+
+//Con un objeto se pueden asignar muchos valores
+let alumno = {nombre: "Juan", 
+              edad: 23,
+             nota: 7.2}
+
+//Para imprimir que tipo de dato tiene el objeto alumno
+console.log(typeof alumno);
+
+//Se puede acceder a propiedades individuales del objeto
+ 
+//Indexación de puntos
+console.log(alumno.nombre);
+console.log(alumno.edad);
+//Indexación de corchetes
+console.log(alumno["edad"]);
+
+//Tambien se puede acceder a ellos para modificarlos
+
+alumno.nota = 7.9;
+console.log(alumno["nota"]);
+
+//Se puede añadir otro campo
+
+alumno.aprobado = true;
+console.log(alumno);
+
+//Dentro del objeto tambien se puede agregar una funcion
+let alumno2 = {nombre: "Pablo", 
+              edad: 25,
+              nota: 7.2,
+              resumen: function(){
+                //La palabra this hace referencia al objeto donde nos encontramos
+                return "El alumno se llama " + this.nombre + " tiene " + this.edad + "años, y su nota media es " + this.nota
+              }}
+
+alumno2.resumen();
+
+//De esta manera se puede eliminar una propiedad
+
+delete alumno2.nota;
+console.log(alumno2);
+
+//Tambien se puede declarar objetos en cada uno de los parametros
+
+let alumno3 = {nombre: "Pablo", 
+              edad: 25,
+              nota: {matematicas: 8.3,
+                     ingles: 7.2,
+                     historia: 6.1},
+              resumen: function(){
+                //La palabra this hace referencia al objeto donde nos encontramos
+                return "El alumno se llama " + this.nombre + " tiene " + this.edad + "años, y su nota media es " + this.nota
+              }}
+
+console.log(alumno3.nota)
+
+//Utilizando la indexación por puntos
+
+console.log(alumno3.nota.matematicas);
+
+//indexacion por corchetes
+
+console.log(alumno3["nota"]["matematicas"]);
+
+//Toca tener en cuenta que los parametros no pueden repetirse
+
+let alumno4 = {nombre: "Pablo", 
+              edad: 25,
+              nota: {matematicas: 8.3,
+                     ingles: 7.2,
+                     historia: 6.1},
+               edad: 23,
+              resumen: function(){
+                //La palabra this hace referencia al objeto donde nos encontramos
+                return "El alumno se llama " + this.nombre + " tiene " + this.edad + "años, y su nota media es " + this.nota
+              }}
+
+//En este caso se repitio pero asigna el ultimo valor que hayamos puesto
+console.log(alumno);
+</script>

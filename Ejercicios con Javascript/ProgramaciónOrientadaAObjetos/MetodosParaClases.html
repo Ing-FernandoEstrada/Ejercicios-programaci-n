@@ -1,0 +1,35 @@
+<script>
+    //Metodos para clases
+
+class Alumno {
+   constructor (nombre, edad, nota){
+     this.nombre = nombre;
+     this.edad = edad;
+     this.nota = nota;
+   }
+  //Metodos para clases se declara aqui
+  Aprobado() {
+    if (this.nota >= 5){
+      return true;
+    } else{
+      return false;
+    }
+  }
+}
+
+let alumno1 = new Alumno("Pablo", 26, 7.2);
+let alumno2 = new Alumno("Laura", 22, 7.7);
+let alumno3 = new Alumno("Juan", 22, 3.9);
+
+console.log(alumno1.Aprobado());
+console.log(alumno2.Aprobado());
+console.log(alumno3.Aprobado());
+
+//Este metodo es aplicable a objetos de clase alumno 
+
+let alumno4 = {nombre: "Pedro", edad: 23, nota: 8.1}
+//console.log(alumno4.Aprobado());
+
+
+
+</script>

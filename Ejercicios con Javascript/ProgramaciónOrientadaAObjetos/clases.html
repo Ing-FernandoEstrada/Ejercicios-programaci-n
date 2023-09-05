@@ -1,0 +1,43 @@
+<script>
+    //Clases
+
+let alumno1 = {
+  nombre: "Pablo",
+  edad: 28,
+  nota: 6.1
+};
+
+let alumno2= {
+  nombre: "Laura",
+  edad: 28,
+  nota: 6.1
+};
+
+let alumno3= {
+  nombre: "Pedro",
+  edad: 28,
+  nota: 6.1
+};
+
+//Si se tiene muchos objetos esto seria muy largo para no realizar este proceso es mejor crearlo con clases
+
+class Alumno{
+  
+  //Nos permite establecer de manera mas sencilla los valores
+  constructor (nombre, edad, nota){
+    this.nombre = nombre;
+    this.edad = edad;
+    this.nota = nota;
+  }
+}
+//De esta manera se estaria estableciendo la clase alumno
+
+let alumno4 = new Alumno("Pablo", 26, 7.2);
+let alumno5 = new Alumno("Pedro", 26, 7.2);
+
+//Se estaria llemando al objeto de manera general
+console.log(alumno4);
+//Para llamarlo de manera individual
+console.log(alumno4.nombre);
+//Lo mismo para edad y nota
+</script>
